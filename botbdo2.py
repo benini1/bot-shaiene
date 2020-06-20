@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
+import config
 
-token = "Njk0Mjk5Nzc1OTgxNDUzMzEy.XsbkBQ.OZcYAnN6gMbYT7bqN4uI5QqiKdo"
+token = config.token
 description = '''An example bot to showcase the discord.ext.commands extension
 module.
 There are a number of utility commands being showcased here.'''
@@ -179,6 +180,11 @@ async def craftbarcos(ctx):
 @bot.command()
 async def itensmercante(ctx):
     img = discord.File("img/imgmercante.png", filename="img/imgmercante.png")
+    await ctx.send("{0.author.mention}".format(ctx), file=img)
+
+@bot.command()
+async def npcmargoria(ctx):
+    img = discord.File("img/mercadores.png", filename="img/mercadores.png")
     await ctx.send("{0.author.mention}".format(ctx), file=img)
 
 @bot.command()
