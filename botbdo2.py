@@ -1,7 +1,6 @@
 import os
 import discord
 from discord.ext import commands
-import config
 
 token = os.environ('token')
 description = '''An example bot to showcase the discord.ext.commands extension
