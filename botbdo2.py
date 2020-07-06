@@ -2,7 +2,7 @@ import os
 import discord
 from discord.ext import commands
 
-token = os.environ('token')
+token = os.environ.get('token')
 description = '''An example bot to showcase the discord.ext.commands extension
 module.
 There are a number of utility commands being showcased here.'''
