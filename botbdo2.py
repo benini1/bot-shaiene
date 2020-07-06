@@ -1,8 +1,10 @@
+from multiprocessing import process
+
 import discord
 from discord.ext import commands
 import config
 
-token = config.token
+token = process.env.token
 description = '''An example bot to showcase the discord.ext.commands extension
 module.
 There are a number of utility commands being showcased here.'''
