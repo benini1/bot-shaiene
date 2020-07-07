@@ -135,7 +135,7 @@ async def bussola(ctx):
 
 @bot.command()
 async def pothp(ctx):
-    img = discord.File("img/pot_hp.jpg", filename="img/Pot_hp.jpg")
+    img = discord.File("img/pot_hp.jpg", filename="img/pot_hp.jpg")
     await ctx.send("{0.author.mention}".format(ctx), file=img)
 
 @bot.command()
